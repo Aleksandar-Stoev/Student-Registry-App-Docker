@@ -4,3 +4,4 @@ and now with Jenkins
 and additional commit
 , and then another one
 , and one more
+, test trigger
