@@ -24,7 +24,7 @@ pipeline{
         }
         stage("Approval for Deployment"){
             steps{
-                input message: "Do you want to deploy the application?"
+                input message: "Do you want to deploy the application?",
                     ok: "Deploy"
             }
         }
