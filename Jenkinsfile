@@ -22,5 +22,16 @@ pipeline{
                 }
             }
         }
+        stage("Approval for Deployment"){
+            steps{
+                input message: "Do you want to deploy the application?"
+                    ok: "Deploy"
+            }
+        }
+        stage("Deploy"){
+            steps{
+                echo "Deploying application..."
+            }
+        }
     }
 }
